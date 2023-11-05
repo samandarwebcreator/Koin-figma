@@ -1,0 +1,97 @@
+.hero {
+  .hero__bg {
+    background-color: $brand-body-color;
+  }
+
+  .hero__wrapper {
+    padding-top: 150px;
+    padding-bottom: 262px;
+    background-image: url(../../img/herobg.png);
+    background-repeat: no-repeat;
+    background-size: 550px 627px;
+    background-position: right;
+  }
+
+  .hero__content {
+    &-title {
+      width: 631px;
+      color: #fff;
+      font-size: 80px;
+      font-weight: 600;
+      line-height: 120%;
+      margin-bottom: 32px;
+    }
+
+    &-text {
+      width: 608px;
+      color: #fff;
+      font-size: 20px;
+      line-height: 158%;
+      margin-bottom: 44px;
+    }
+  }
+  .hero__content-button__link {
+    @include brand-button();
+  }
+
+  @media only screen and (max-width: 743px) {
+    .hero__wrapper {
+      padding-top: 85px;
+      padding-bottom: 150px;
+      background-image: url(../../img/herobg.png);
+      background-repeat: no-repeat;
+      background-size: 346px 404px;
+      background-position: right;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+    .hero__content {
+      &-title {
+        width: 370px;
+        font-size: 48px;
+        margin-bottom: 32px;
+      }
+
+      &-text {
+        width: 370px;
+        font-size: 20px;
+        line-height: 158%;
+        margin-bottom: 32px;
+      }
+    }
+    .hero__content-button__link {
+      width: 212px;
+      @include brand-button();
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    .hero__wrapper {
+      padding-top: 65px;
+      padding-bottom: 526px;
+      background-image: url(../../img/herobg.png);
+      background-repeat: no-repeat;
+      background-size: 336px 381px;
+      background-position: 10px 500px;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+    .hero__content {
+      &-title {
+        width: 359px;
+        font-size: 48px;
+        margin-bottom: 24px;
+      }
+
+      &-text {
+        width: 359px;
+        font-size: 20px;
+        line-height: 158%;
+        margin-bottom: 24px;
+      }
+    }
+    .hero__content-button__link {
+      @include brand-button();
+    }
+  }
+}

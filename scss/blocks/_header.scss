@@ -1,0 +1,76 @@
+.header {
+  .header__bg {
+    background-color: $brand-body-color;
+  }
+
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  .header__nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 56px;
+    .header__list-button {
+      @include brand-button();
+    }
+
+    .header__list-link {
+      color: #fff;
+      font-size: 20px;
+      transition: all 0.3s ease-in-out;
+      border-bottom: 2px solid transparent;
+      border-radius: 3px;
+
+      &:hover {
+        transition: all 0.3s ease-in-out;
+        color: $brand-btn-color;
+      }
+    }
+  }
+  .header__hamburger {
+    display: none;
+  }
+
+  @media only screen and (max-width: 743px) {
+    .header__wrapper {
+      min-width: 743px;
+      width: 100%;
+      padding: 20px 40px;
+
+      .header__hamburger {
+        display: block;
+      }
+    }
+
+    .header__nav {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    .header__wrapper {
+      min-width: 350px;
+      width: 100%;
+      padding: 20px 16px;
+
+      .header__logo {
+        width: 105px;
+        height: 40px;
+      }
+
+      .header__hamburger {
+        display: block;
+      }
+    }
+
+    .header__nav {
+      display: none;
+    }
+  }
+}
