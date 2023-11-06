@@ -1,0 +1,123 @@
+.statistics {
+  .statistics__bg {
+    background-color: $brand-body-color;
+  }
+
+  .statistics__main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .statistics__title {
+    margin-bottom: 42px;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 130.5%;
+  }
+
+  .statistics__content-inner {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+  }
+
+  .statistics__playmarket {
+    border: 2px solid transparent;
+    transition: all 1s ease-in-out;
+    width: 205px;
+    height: 65px;
+    border-radius: 20px;
+
+    &:hover {
+      border: 2px solid $brand-btn-color;
+      transition: all 1s ease-in-out;
+    }
+  }
+
+  .statistics__applestore {
+    width: 204px;
+    height: 60px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      border: 2px solid $brand-btn-color;
+      transition: all 1s ease-in-out;
+    }
+  }
+
+  .statistics__image-div {
+    margin-top: -180px;
+  }
+
+  .statistics__image {
+    width: 410px;
+    height: 600px;
+  }
+
+  @media only screen and (max-width: 1120px) {
+    .statistics__main-wrapper {
+      .statistics__title {
+        font-size: 42px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .statistics__main-wrapper {
+      .statistics__title {
+        font-size: 38px;
+      }
+      .statistics__image {
+        width: 310px;
+        height: 410px;
+      }
+
+      .statistics__content-inner {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .statistics__playmarket {
+        width: 180px;
+        height: 50px;
+      }
+
+      .statistics__applestore {
+        width: 188px;
+        height: 50px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 430px) {
+    .statistics__main-wrapper {
+      padding-top: 30px;
+      flex-direction: column;
+      .statistics__title {
+        font-size: 28px;
+        margin-bottom: 24px;
+        margin-left: 10px;
+      }
+
+      .statistics__playmarket {
+        width: 171px;
+        height: 54px;
+      }
+
+      .statistics__applestore {
+        width: 172px;
+        height: 52px;
+      }
+
+      .statistics__image-div {
+        margin-top: 0;
+        margin-top: 19px;
+      }
+    }
+  }
+}

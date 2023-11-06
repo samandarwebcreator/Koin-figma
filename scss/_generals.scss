@@ -15,8 +15,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  border-radius: 20px;
-  box-shadow: inset 0 0 6px rgba(235, 1, 1, 0.3);
+  box-shadow: inset 0 0 700px $brand-body-color;
 }
 
 body::-webkit-scrollbar-thumb {

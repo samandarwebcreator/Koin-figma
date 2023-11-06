@@ -61,8 +61,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  border-radius: 20px;
-  box-shadow: inset 0 0 6px rgba(235, 1, 1, 0.3);
+  box-shadow: inset 0 0 700px #190422;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -706,5 +705,210 @@ body::-webkit-scrollbar-thumb {
     border: 2px solid #bc8afc;
     color: #bc8afc;
     background-color: transparent;
+  }
+}
+
+.services .services__bg {
+  background-color: rgba(102, 163, 219, 0.0509803922);
+}
+.services .services__main-wrapper {
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+.services .services__main-wrapper .services__title {
+  color: #000;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 158%;
+  margin-bottom: 40px;
+}
+.services .services__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.services .services__inner-wrapper {
+  max-width: 477px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.services .services__inner-wrapper .services__section-img {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.services .services__inner-title {
+  color: #1f262e;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 158%;
+  margin-bottom: 12px;
+}
+.services .services__inner-text {
+  color: #000;
+  font-size: 20px;
+  line-height: 158%;
+}
+@media only screen and (max-width: 1100px) {
+  .services .services__main-wrapper .services__title {
+    font-size: 44px;
+  }
+  .services .services__wrapper .services__inner-wrapper {
+    max-width: 430px;
+    width: 100%;
+  }
+  .services .services__wrapper .services__inner-title,
+  .services .services__wrapper .services__inner-text {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .services .services__main-wrapper .services__title {
+    font-size: 42px;
+  }
+  .services .services__wrapper .services__inner-wrapper {
+    max-width: 355px;
+    width: 100%;
+  }
+  .services .services__wrapper .services__inner-title,
+  .services .services__wrapper .services__inner-text {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .services .services__main-wrapper .services__title {
+    max-width: 355px;
+    width: 100%;
+    font-size: 30px;
+  }
+  .services .services__wrapper .services__inner-wrapper {
+    max-width: 355px;
+    width: 100%;
+  }
+  .services .services__wrapper .services__inner-title {
+    font-size: 18px;
+  }
+  .services .services__wrapper .services__inner-text {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .services .services__main-wrapper .services__title {
+    font-size: 38px;
+  }
+  .services .services__wrapper .services__inner-wrapper {
+    max-width: 355px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .services .services__wrapper .services__inner-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .services .services__wrapper .services__inner-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+
+.statistics .statistics__bg {
+  background-color: #190422;
+}
+.statistics .statistics__main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.statistics .statistics__title {
+  margin-bottom: 42px;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 130.5%;
+}
+.statistics .statistics__content-inner {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+.statistics .statistics__playmarket {
+  border: 2px solid transparent;
+  transition: all 1s ease-in-out;
+  width: 205px;
+  height: 65px;
+  border-radius: 20px;
+}
+.statistics .statistics__playmarket:hover {
+  border: 2px solid #bc8afc;
+  transition: all 1s ease-in-out;
+}
+.statistics .statistics__applestore {
+  width: 204px;
+  height: 60px;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  transition: all 1s ease-in-out;
+}
+.statistics .statistics__applestore:hover {
+  border: 2px solid #bc8afc;
+  transition: all 1s ease-in-out;
+}
+.statistics .statistics__image-div {
+  margin-top: -180px;
+}
+.statistics .statistics__image {
+  width: 410px;
+  height: 600px;
+}
+@media only screen and (max-width: 1120px) {
+  .statistics .statistics__main-wrapper .statistics__title {
+    font-size: 42px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .statistics .statistics__main-wrapper .statistics__title {
+    font-size: 38px;
+  }
+  .statistics .statistics__main-wrapper .statistics__image {
+    width: 310px;
+    height: 410px;
+  }
+  .statistics .statistics__main-wrapper .statistics__content-inner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .statistics .statistics__main-wrapper .statistics__playmarket {
+    width: 180px;
+    height: 50px;
+  }
+  .statistics .statistics__main-wrapper .statistics__applestore {
+    width: 188px;
+    height: 50px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .statistics .statistics__main-wrapper {
+    padding-top: 30px;
+    flex-direction: column;
+  }
+  .statistics .statistics__main-wrapper .statistics__title {
+    font-size: 28px;
+    margin-bottom: 24px;
+    margin-left: 10px;
+  }
+  .statistics .statistics__main-wrapper .statistics__playmarket {
+    width: 171px;
+    height: 54px;
+  }
+  .statistics .statistics__main-wrapper .statistics__applestore {
+    width: 172px;
+    height: 52px;
+  }
+  .statistics .statistics__main-wrapper .statistics__image-div {
+    margin-top: 0;
+    margin-top: 19px;
   }
 }/*# sourceMappingURL=styles.css.map */

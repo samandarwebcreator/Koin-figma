@@ -1,0 +1,138 @@
+.services {
+  .services__bg {
+    background-color: #66a3db0d;
+  }
+
+  .services__main-wrapper {
+    padding-top: 50px;
+    padding-bottom: 200px;
+
+    .services__title {
+      color: #000;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 158%;
+      margin-bottom: 40px;
+    }
+  }
+  .services__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+
+  .services__inner-wrapper {
+    max-width: 477px;
+    width: 100%;
+    margin-bottom: 60px;
+
+    .services__section-img {
+      width: 80px;
+      height: 80px;
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+  }
+
+  .services__inner-title {
+    color: #1f262e;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 158%;
+    margin-bottom: 12px;
+  }
+
+  .services__inner-text {
+    color: #000;
+    font-size: 20px;
+    line-height: 158%;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .services__main-wrapper {
+      .services__title {
+        font-size: 44px;
+      }
+    }
+    .services__wrapper {
+      .services__inner-wrapper {
+        max-width: 430px;
+        width: 100%;
+      }
+
+      .services__inner-title,
+      .services__inner-text {
+        font-size: 18px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .services__main-wrapper {
+      .services__title {
+        font-size: 42px;
+      }
+    }
+    .services__wrapper {
+      .services__inner-wrapper {
+        max-width: 355px;
+        width: 100%;
+      }
+
+      .services__inner-title,
+      .services__inner-text {
+        font-size: 18px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 430px) {
+    .services__main-wrapper {
+      .services__title {
+        max-width: 355px;
+        width: 100%;
+        font-size: 30px;
+      }
+    }
+    .services__wrapper {
+      .services__inner-wrapper {
+        max-width: 355px;
+        width: 100%;
+      }
+
+      .services__inner-title {
+        font-size: 18px;
+      }
+
+      .services__inner-text {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    .services__main-wrapper {
+      .services__title {
+        font-size: 38px;
+      }
+    }
+    .services__wrapper {
+      .services__inner-wrapper {
+        max-width: 355px;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .services__inner-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .services__inner-text {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
