@@ -1,0 +1,131 @@
+.benefits {
+  .benefits__main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px 10px;
+  }
+
+  .benefits__image {
+    width: 568px;
+    height: 609px;
+  }
+
+  .benefits__content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    max-width: 520px;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .benefits__title {
+    color: #000;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 130.5%;
+  }
+
+  .benefits__description {
+    color: #000;
+    font-size: 20px;
+    line-height: 158%;
+  }
+
+  .benefits__list {
+    list-style: none;
+  }
+
+  .benefits__list-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 20px;
+  }
+
+  .benefits__list-text {
+    color: #000;
+    font-size: 20px;
+    line-height: 158%;
+  }
+
+  .benefits__list-icon {
+    width: 40px;
+    height: 40px;
+    transition: all 0.6s ease-in-out;
+    border-radius: 50%;
+    &:hover {
+      transition: all 0.6s ease-in-out;
+      background-color: $brand-body-color;
+      cursor: pointer;
+    }
+  }
+
+  @media only screen and (max-width: 1120px) {
+    .benefits__main-wrapper {
+      .benefits__image {
+        width: 468px;
+        height: 509px;
+      }
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .benefits__main-wrapper {
+      .benefits__content {
+        max-width: 320px;
+        width: 100%;
+      }
+      .benefits__image {
+        width: 368px;
+        height: 409px;
+      }
+
+      .benefits__title {
+        font-size: 38px;
+      }
+
+      .benefits__description {
+        font-size: 16px;
+      }
+
+      .benefits__list-text {
+        font-size: 16px;
+      }
+
+      .benefits__list-icon {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 430px) {
+    .benefits__main-wrapper {
+      .benefits__content {
+        max-width: 320px;
+        width: 100%;
+      }
+      .benefits__image-div {
+        display: none;
+      }
+
+      .benefits__title {
+        font-size: 38px;
+      }
+
+      .benefits__description {
+        font-size: 16px;
+      }
+
+      .benefits__list-text {
+        font-size: 16px;
+      }
+
+      .benefits__list-icon {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}

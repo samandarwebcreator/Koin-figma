@@ -44,6 +44,7 @@
 
   @media only screen and (max-width: 1100px) {
     .header {
+      max-width: 1150px;
       width: 100%;
     }
 
@@ -70,6 +71,8 @@
 
   @media only screen and (max-width: 800px) {
     .header__wrapper {
+      max-width: 800px;
+      width: 100%;
       padding: 20px 25px;
     }
     .header__logo {
@@ -88,6 +91,8 @@
 
   @media only screen and (max-width: 430px) {
     .header__wrapper {
+      max-width: 430px;
+      width: 100%;
       padding: 15px 20px;
     }
     .header__logo {
