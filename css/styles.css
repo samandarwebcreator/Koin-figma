@@ -534,7 +534,7 @@ body::-webkit-scrollbar-thumb {
     height: 599px;
   }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 830px) {
   .finance .finance__wrapper .finance__card {
     max-width: 850px;
     width: 100%;
@@ -783,6 +783,9 @@ body::-webkit-scrollbar-thumb {
   }
 }
 @media only screen and (max-width: 430px) {
+  .services .services__main-wrapper {
+    padding-bottom: 30px;
+  }
   .services .services__main-wrapper .services__title {
     max-width: 355px;
     width: 100%;
@@ -1207,23 +1210,390 @@ body::-webkit-scrollbar-thumb {
 }
 @media only screen and (max-width: 390px) {
   .customers .customers__main-wrapper .customer__chamlirka-picture {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
   .customers .customers__cards {
-    gap: 10px;
-    max-width: 400px;
+    gap: 5px;
+    max-width: 360px;
   }
   .customers .customer__cards-wrapper {
     padding: 0px;
   }
   .customers .customer__cards-wrapper .customer__name {
-    font-size: 16px;
+    font-size: 14px;
   }
   .customers .customer__cards-wrapper .customer__address {
-    font-size: 14px;
+    font-size: 13px;
   }
   .customers .mobile__customer-stars {
     display: flex;
+  }
+}
+
+.footer .footer__bg {
+  background-color: #190422;
+}
+.footer .footer__wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 72px;
+  padding-bottom: 58px;
+}
+.footer .footer__logo {
+  width: 167px;
+  height: 66px;
+  margin-bottom: 26px;
+}
+.footer .footer__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 33px;
+  margin-bottom: 43px;
+  padding-right: 100px;
+}
+.footer .footer__list-item__links {
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.footer .footer__list-item__links:hover {
+  color: #bc8afc;
+  transition: all 0.3s ease-in-out;
+}
+.footer .footer__email-div {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer .footer__input-title {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.footer .footer__input-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 470px;
+  width: 100%;
+}
+.footer .footer__input {
+  color: #736d6d;
+  font-size: 14.723px;
+  line-height: 158%;
+  padding: 23px 196px 23px 24px;
+  outline-color: transparent;
+  max-width: 410px;
+  width: 100%;
+  border: 2px solid transparent;
+  border-radius: 15px;
+}
+.footer .footer__button {
+  padding: 18px 34px 19px 40px;
+  color: #000;
+  font-size: 22px;
+  font-weight: 500;
+  border: 2px solid transparent;
+  transition: all 0.5s ease-in-out;
+  background-color: #bc8afc;
+  margin-left: -100px;
+  width: 130px;
+  height: 75px;
+  border-radius: 15px;
+}
+.footer .footer__button:hover {
+  background-color: #190422;
+  color: #bc8afc;
+  border: 2px solid #bc8afc;
+  transition: all 0.5s ease-in-out;
+}
+.footer .footer__social-links {
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 21px;
+}
+.footer .footer__app-links__div {
+  display: flex;
+  align-items: center;
+  gap: 43px;
+  max-width: 438px;
+  width: 100%;
+  padding-left: 30px;
+}
+.footer .footer__play-market {
+  width: 190px;
+  height: 60px;
+}
+.footer .footer__apple-store {
+  width: 204px;
+  height: 60px;
+}
+@media only screen and (max-width: 1120px) {
+  .footer .footer__wrapper {
+    max-width: 1120px;
+    width: 100%;
+    padding-top: 48px;
+    padding-bottom: 80px;
+  }
+  .footer .footer__logo {
+    width: 147px;
+    height: 56px;
+  }
+  .footer .footer__list {
+    gap: 23px;
+    padding-right: 0;
+  }
+  .footer .footer__list-item__links {
+    font-size: 18px;
+  }
+  .footer .footer__input-title {
+    font-size: 20px;
+  }
+  .footer .footer__input-div {
+    max-width: 460px;
+    width: 100%;
+  }
+  .footer .footer__input {
+    font-size: 14px;
+    padding: 23px 176px 23px 24px;
+    max-width: 380px;
+    width: 100%;
+  }
+  .footer .footer__button {
+    padding: 18px 34px 19px 40px;
+    font-size: 20px;
+    margin-left: -80px;
+    width: 130px;
+    height: 74px;
+    border-radius: 15px;
+    outline-color: transparent;
+  }
+  .footer .footer__social-links {
+    max-width: 190px;
+    gap: 17px;
+  }
+  .footer .footer__app-links__div {
+    gap: 43px;
+    max-width: 438px;
+    width: 100%;
+  }
+  .footer .footer__play-market {
+    width: 180px;
+    height: 60px;
+  }
+  .footer .footer__apple-store {
+    width: 194px;
+    height: 60px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .footer .footer__wrapper {
+    max-width: 1000px;
+    width: 100%;
+    padding-top: 44px;
+    padding-bottom: 74px;
+  }
+  .footer .footer__logo {
+    width: 127px;
+    height: 46px;
+  }
+  .footer .footer__list {
+    gap: 18px;
+    padding-right: 0;
+  }
+  .footer .footer__list-item__links {
+    font-size: 16px;
+  }
+  .footer .footer__input-title {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  .footer .footer__input-div {
+    max-width: 400px;
+    width: 100%;
+  }
+  .footer .footer__input {
+    font-size: 14px;
+    padding: 19px 156px 19px 20px;
+    max-width: 340px;
+    width: 100%;
+  }
+  .footer .footer__button {
+    padding: 18px 34px 19px 40px;
+    font-size: 20px;
+    margin-left: -80px;
+    width: 130px;
+    height: 66px;
+    border-radius: 15px;
+    outline-color: transparent;
+  }
+  .footer .footer__social-links {
+    max-width: 170px;
+    gap: 15px;
+  }
+  .footer .footer__app-links__div {
+    gap: 53px;
+    max-width: 408px;
+    width: 100%;
+    padding-left: 0;
+  }
+  .footer .footer__play-market {
+    width: 160px;
+    height: 60px;
+  }
+  .footer .footer__apple-store {
+    width: 104px;
+    height: 60px;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .footer .footer__wrapper {
+    width: 100%;
+    padding-top: 44px;
+    padding-bottom: 74px;
+    padding-left: 50px;
+  }
+  .footer .footer__logo {
+    width: 127px;
+    height: 46px;
+    margin-bottom: 20px;
+  }
+  .footer .footer__list {
+    gap: 3px;
+    padding-right: 0;
+  }
+  .footer .footer__list-item__links {
+    font-size: 15px;
+  }
+  .footer .footer__input-title {
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+  .footer .footer__input-div {
+    max-width: 340px;
+    width: 100%;
+  }
+  .footer .footer__input {
+    font-size: 13px;
+    padding: 19px 116px 19px 20px;
+    max-width: 340px;
+    width: 100%;
+  }
+  .footer .footer__button {
+    padding: 13px 30px 13px 30px;
+    font-size: 20px;
+    margin-left: -50px;
+    width: 130px;
+    height: 65px;
+    border-radius: 15px;
+    outline-color: transparent;
+  }
+  .footer .footer__social-links {
+    max-width: 170px;
+    gap: 15px;
+  }
+  .footer .footer__app-links__div {
+    gap: 53px;
+    max-width: 408px;
+    width: 100%;
+  }
+  .footer .footer__play-market {
+    width: 111px;
+    height: 54px;
+  }
+  .footer .footer__apple-store {
+    width: 173px;
+    height: 52px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .footer .footer__wrapper {
+    max-width: 430px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 64px;
+    padding-left: 35px;
+  }
+  .footer .footer__logo {
+    width: 127px;
+    height: 46px;
+    margin-bottom: 20px;
+  }
+  .footer .footer__list {
+    flex-direction: column;
+    align-items: start;
+    gap: 3px;
+    padding-right: 0;
+  }
+  .footer .footer__list-item__links {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .footer .footer__input-title {
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+  .footer .footer__input-div {
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer .footer__input {
+    font-size: 13px;
+    padding: 19px 116px 19px 20px;
+    max-width: 340px;
+    width: 100%;
+  }
+  .footer .footer__button {
+    padding: 13px 30px 13px 30px;
+    font-size: 20px;
+    margin-left: -50px;
+    width: 130px;
+    height: 64px;
+    border-radius: 15px;
+    outline-color: transparent;
+  }
+  .footer .footer__social-links {
+    max-width: 170px;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  .footer .footer__app-links__div {
+    gap: 183px;
+    max-width: 308px;
+    width: 100%;
+  }
+  .footer .footer__play-market {
+    width: 11px;
+    height: 54px;
+  }
+  .footer .footer__apple-store {
+    width: 173px;
+    height: 52px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .footer .footer__wrapper {
+    padding-left: 15px;
+  }
+  .footer .footer__app-links__div {
+    gap: 163px;
+    max-width: 308px;
+    width: 100%;
+  }
+  .footer .footer__app-links__div .footer__play-market {
+    height: 54px;
+  }
+  .footer .footer__apple-store {
+    height: 52px;
   }
 }/*# sourceMappingURL=styles.css.map */

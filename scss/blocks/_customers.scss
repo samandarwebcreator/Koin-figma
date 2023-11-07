@@ -210,22 +210,22 @@
   @media only screen and (max-width: 390px) {
     .customers__main-wrapper {
       .customer__chamlirka-picture {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
       }
     }
 
     .customers__cards {
-      gap: 10px;
-      max-width: 400px;
+      gap: 5px;
+      max-width: 360px;
     }
     .customer__cards-wrapper {
       padding: 0px;
       .customer__name {
-        font-size: 16px;
+        font-size: 14px;
       }
       .customer__address {
-        font-size: 14px;
+        font-size: 13px;
       }
     }
     .mobile__customer-stars {
